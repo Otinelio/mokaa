@@ -3,6 +3,13 @@ import { nitro } from "nitro/vite"; // <-- Ajout de l'import Nitro
 
 export default defineConfig({
   vite: { // <-- Ajout de la clé vite pour passer des plugins supplémentaires
+    esbuild: {
+      target: 'es2015'
+    },
+    build: {
+      target: 'es2015',
+      cssTarget: 'chrome61'
+    },
     plugins: [
       nitro({ preset: "vercel" }) // <-- Force le formatage pour Vercel
     ]

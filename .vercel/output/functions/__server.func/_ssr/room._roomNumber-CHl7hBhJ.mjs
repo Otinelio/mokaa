@@ -2,7 +2,7 @@ import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { M as MENU_ITEMS } from "./menu-data-BhdRbdrR.mjs";
 import { u as useCart, M as MenuCard } from "./MenuCard-DOWL6yRw.mjs";
 import { a as useOrders } from "./orders-SNdynJj3.mjs";
-import { R as Route } from "./router-BpXPUSqp.mjs";
+import { R as Route } from "./router-CFSZN7OF.mjs";
 import { m as motion } from "../_libs/framer-motion.mjs";
 import { x as CircleCheck, S as ShoppingCart, y as Send } from "../_libs/lucide-react.mjs";
 import "../_libs/zustand.mjs";
