@@ -48,32 +48,32 @@
   --radius: 0.5rem;
 
   /* Brand */
-  --saffron: oklch(0.68 0.18 45);          /* #E8651A */
-  --gold: oklch(0.72 0.14 80);             /* #C9960C */
-  --ivory: oklch(0.97 0.015 80);           /* #FAF6EE */
-  --teal: oklch(0.38 0.05 210);            /* #1A4D5A */
-  --terracotta: oklch(0.55 0.16 35);       /* #B54A2F */
-  --cream: oklch(0.94 0.035 85);           /* #F5EDD8 */
+  --saffron: #E8651A;
+  --gold: #C9960C;
+  --ivory: #FAF6EE;
+  --teal: #1A4D5A;
+  --terracotta: #B54A2F;
+  --cream: #F5EDD8;
 
   /* Shadcn semantic mapped to warm palette */
   --background: var(--ivory);
-  --foreground: oklch(0.22 0.03 40);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.03 40);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.03 40);
+  --foreground: #332822;
+  --card: #FFFFFF;
+  --card-foreground: #332822;
+  --popover: #FFFFFF;
+  --popover-foreground: #332822;
   --primary: var(--saffron);
   --primary-foreground: var(--ivory);
   --secondary: var(--cream);
   --secondary-foreground: var(--teal);
-  --muted: oklch(0.94 0.02 80);
-  --muted-foreground: oklch(0.45 0.03 60);
+  --muted: #EBE1D0;
+  --muted-foreground: #6B5C4B;
   --accent: var(--gold);
-  --accent-foreground: oklch(0.18 0.02 60);
-  --destructive: oklch(0.55 0.22 25);
+  --accent-foreground: #2B2520;
+  --destructive: #BA3525;
   --destructive-foreground: var(--ivory);
-  --border: oklch(0.88 0.02 70);
-  --input: oklch(0.9 0.02 70);
+  --border: #E6DBC6;
+  --input: #EBE3D0;
   --ring: var(--gold);
 }
 
@@ -100,8 +100,8 @@
   50% { transform: translateY(-30px) translateX(15px); opacity: 0.8; }
 }
 @keyframes pulseGold {
-  0%, 100% { box-shadow: 0 0 0 0 oklch(0.72 0.14 80 / 0.5); }
-  50% { box-shadow: 0 0 0 8px oklch(0.72 0.14 80 / 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 150, 12, 0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(201, 150, 12, 0); }
 }
 .animate-fade-up { animation: fadeUp 0.8s ease-out both; }
 .animate-pulse-gold { animation: pulseGold 2s infinite; }
@@ -123,7 +123,7 @@
 
 .texture-grain {
   background-image:
-    radial-gradient(oklch(0.7 0.14 60 / 0.06) 1px, transparent 1px);
+    radial-gradient(rgba(201, 130, 20, 0.06) 1px, transparent 1px);
   background-size: 3px 3px;
 }
 
@@ -131,11 +131,11 @@
   background: linear-gradient(135deg, var(--saffron) 0%, var(--terracotta) 100%);
 }
 .gradient-gold-overlay {
-  background: linear-gradient(180deg, transparent 0%, oklch(0.2 0.03 40 / 0.7) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(51, 40, 34, 0.7) 100%);
 }
 
 .room-card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .room-card-hover:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 40px -10px oklch(0.72 0.14 80 / 0.4);
+  box-shadow: 0 12px 40px -10px rgba(201, 150, 12, 0.4);
 }
